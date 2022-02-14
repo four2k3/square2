@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="./style_new.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="main"> 
+        <div class="logoName">
+            CROSSWORD
+        </div>
+        <div class="boxGameWrap">
+            <div class="showSquare">
+                <table class="tableSquare">
+                    <!-- HTML render from JS -->
+                </table>
+                <div class="boxAnswer">
+                    <div class="showQuestion">
+                        <p class="textShowQuestion"></p>
+                    </div>
+                    <input class="inputAnswer" placeholder="Your Answer ..." type="text"> 
+                    <button class="btnAnswer">Enter</button>
+                    <button class="showAnswer">Show</button>
+                </div>
+            </div>
+            <div class="creatGame">
+                <button class="fas fa-arrow-right narrowIcon"></button>
+                <button class="newGame">New Game</button>
+                <button class="help">Help</button>
+                <div class="help_extend helpExtend ">
+                    <p class="help_rows"><b>Hướng dẫn sử dụng.</b></p>
+                    <p class="help_rows">B1: Bấm New Game để tạo trò chơi mới </p>
+                    <p class="help_rows">B2: Chọn phương thức nhập </p>
+                        <p class="help_rows"style="margin-left:10px;">- Nhập từng câu: One by One</p>
+                            <p class="help_rows" style="margin-left:20px;">+ Nhập câu hỏi , trả lời,  rồi nhấn Next Question.</p>
+                            <p class="help_rows" style="margin-left:20px;">+ Nếu đã nhập xong thì nhấn Finish.</p>
+                        <p class="help_rows"style="margin-left:10px;">- Nhập tất cả một lần: Upload File.</p>
+                            <p class="help_rows" style="margin-left:20px;">+ Nhập tất cả câu hỏi theo quy tắc sau:</p>
+                                <p class="help_rows"  style="margin-left:20px;">*Câu: (Đề) *ĐS: (Đáp án) *Câu: (Đề) *ĐS: (Đáp án) ... </p>
+                            <p class="help_rows" style="margin-left:20px;">+ Xong nhấn Finish</p>
+                    <p class="help_rows">B3: Xuất hiện giao diện trò chơi ô chữ. </p>
+                        <p class="help_rows"style="margin-left:10px;">- Enter: Điền đáp án của bạn</p>
+                        <p class="help_rows"style="margin-left:10px;">- Show: Hiện đáp án</p>
+
+                </div>
+                <div class="renderGameWrap">
+                    <div class="chooseMethod">
+                        <div class="chooseMethodText">Choose Method: </div>
+                        <button class="oneByOne">One by One</button>
+                        <button class="upFile">Upload file</button>
+                    </div>
+                    <div class="ansques">
+                        <input class="question" type="text" placeholder="Question ?">
+                        <input class="answer" type="text" placeholder="Answer: ">
+                        <button class="nextAsk">Next Question</button>
+                    </div>
+                    <div class="boxUploadFile">
+                        <input class="boxUpload" type="text" placeholder="Full ">
+                    </div>
+                    <button class="finish">Finish</button>
+                    <!-- <button class="reset">Reset</button> -->
+                </div>
+
+                <div class="noticationBox">Notification
+                    <p class="notification"></p>
+                </div>
+            </div>
+            <button class="fas fa-arrow-left extendIcon"></button>        
+        </div>
+        <p class="make">Made by four. [2022] </p>
+    </div>
+    <script src="./code_new_2.js"></script>
+</body>
+</html>
